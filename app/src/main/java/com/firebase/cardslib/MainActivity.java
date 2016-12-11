@@ -38,7 +38,7 @@ import models.Cafeteria;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    CafeteriaAdapter cafeteriaAdapter;
+//    CafeteriaAdapter cafeteriaAdapter;
     DatabaseReference rootReference;
     ArrayList<Cafeteria> cafeteriaArrayList;
 
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-                cafeteriaAdapter.notifyDataSetChanged();
+//                cafeteriaAdapter.notifyDataSetChanged();
                 processData(cafeteriaArrayList);
 
             }
@@ -77,12 +77,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        cafeteriaAdapter = new CafeteriaAdapter(cafeteriaArrayList,MainActivity.this);
+//        cafeteriaAdapter = new CafeteriaAdapter(cafeteriaArrayList,MainActivity.this);
 
-        recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
+        /*recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(false);
-        recyclerView.setAdapter(cafeteriaAdapter);
+        recyclerView.setAdapter(cafeteriaAdapter);*/
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
